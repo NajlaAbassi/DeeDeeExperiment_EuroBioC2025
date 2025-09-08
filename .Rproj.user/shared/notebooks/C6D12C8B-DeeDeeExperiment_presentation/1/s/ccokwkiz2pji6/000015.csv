@@ -1,0 +1,10 @@
+"0","#| output-location: fragment
+#| echo: true
+#| code-line-numbers: ""2""
+knitr::kable(lapply(get_fea_list(dde,
+                                 dea_name = ""salmonella_vs_naive"",
+                                 format = ""original""), dplyr::slice_head()))
+"
+"2","Error in UseMethod(""slice_head"") : 
+  no applicable method for 'slice_head' applied to an object of class ""NULL""
+"

@@ -1,0 +1,11 @@
+"0","#| output-location: fragment"
+"0","#| echo: true"
+"0","#| code-line-numbers: ""4-5"""
+"0","summary(dde,"
+"0","        # specify FDR threshold for subsetting DE genes based on adjusted p-values"
+"0","        FDR = 0.01,"
+"0","        # show contextual information, if available"
+"0","        show_scenario_info = TRUE)"
+"2","Error in .Vector_summary(object, ...) : 
+  unused arguments (FDR = 0.01, show_scenario_info = TRUE)
+"
