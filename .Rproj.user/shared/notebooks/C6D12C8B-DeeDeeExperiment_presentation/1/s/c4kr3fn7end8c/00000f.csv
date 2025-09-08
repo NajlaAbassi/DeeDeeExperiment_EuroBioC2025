@@ -1,9 +1,0 @@
-"0","#| output-location: fragment"
-"0","#| echo: true"
-"0","#| code-line-numbers: ""2-3"""
-"0",""
-"0","summary(dde,"
-"0","        # specify FDR threshold for subsetting DE genes based on adjusted p-values"
-"0","        FDR = 0.01)"
-"2","Error in .Vector_summary(object, ...) : unused argument (FDR = 0.01)
-"
