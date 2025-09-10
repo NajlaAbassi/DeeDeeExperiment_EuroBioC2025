@@ -323,17 +323,6 @@ dde <- addScenarioInfo(dde,
 :::
 
 
-## Summary of a `dde` object {auto-animate="true"}
-
-<br>
-
-```{r summary_mini}
-#| echo: true
-#| output-location: fragment
-# minimal summary
-summary(dde)
-```
-
 ## Summary of a `dde` object
 
 ### Set FDR threshold
@@ -358,38 +347,6 @@ summary(dde,
         show_scenario_info = TRUE)
 ```
 
-## Accessing results stored in a `dde` object {auto-animate="true"}
-
-<br>
-<br>
-<br>
-<br>
-
-```{r names}
-#| echo: true
-#| output-location: fragment
-# get DEA names
-getDEANames(dde)
-```
-
-:::: {.fragment .fade-up}
-::: callout-tip
-To retrieve the names of available FEAs in a `dde` object, use `getFEANames()`
-:::
-::::
-
-## Accessing results stored in a `dde` object {auto-animate="true"}
-
-### Accessing DEA results {auto-animate="true" auto-animate-easing="ease-in-out"}
-
-```{r get_dea_res_1}
-#| echo: true
-#| code-line-numbers: "2-2"
-#| output: true
-#| output-location: fragment
-# access the 1st DEA if dea_name is not specified (default: minimal format)
-knitr::kable(head(getDEA(dde)))
-```
 
 ## Accessing results stored in a `dde` object {auto-animate="true"}
 
