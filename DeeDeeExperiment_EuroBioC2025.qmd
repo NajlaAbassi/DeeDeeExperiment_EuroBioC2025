@@ -5,8 +5,8 @@ author:
 - name: Najla Abassi
   affiliation: 
   - Research Associate, PhD Student
-  - Bioinformatics Group
-  - Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI), Mainz, Germany
+  - Bioinformatics Division
+  - Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI) - University Medical Center, Mainz, Germany
   - EuroBioC2025, Barcelona, Spain
 date: "09.17.2025"
 date-format: long
@@ -70,7 +70,7 @@ format:
 * FEA: Functional Enrichment Analysis
 :::
 
-## Probelm amplified: Complex designs/Single cell data ...
+## Probelm amplified: Complex designs/Single-cell data ...
 
 :::::: {layout="[[1,1], [1]]" layout-heights="[2,1]"}
 
@@ -107,7 +107,7 @@ format:
 
 :::
 
-## Creating a `DeeDeeExperiment` object
+## Creating a `dde` object
 
 ```{r process-data, echo=FALSE}
 library("DeeDeeExperiment")
@@ -193,7 +193,7 @@ data("gost_res",package = "DeeDeeExperiment")
 
 ```{r construct_dde, warning=FALSE}
 #| echo: true
-#| code-line-numbers: "2-6"
+#| code-line-numbers: "2|3-6"
 #| output-location: fragment
 # initialize DeeDeeExperiment with dds object and DESeq results (as a named list)
 dde <- DeeDeeExperiment(sce = dds_macrophage,
