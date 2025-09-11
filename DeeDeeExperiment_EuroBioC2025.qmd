@@ -447,32 +447,6 @@ To remove FEAs stored in a `dde` object, use `removeFEA()`
 
 # Other features ...
 
-## Access associated metadata stored in `dea`/`fea` using `getDEAInfo()`/`getFEAInfo()`
-
-<br>
-<br>
-<br>
-<br>
-
-```{r getDEAInfo getDEAInfo_1}
-#| echo: true
-#| output-location: fragment
-#| code-line-numbers: "2-2"
-#| output: true
-
-# extra info
-getDEAInfo(dde)$IFNg_vs_naive$package 
-```
-
-```{r getDEAInfo_2}
-#| echo: true
-#| output-location: fragment
-#| code-line-numbers: "2-2"
-#| output: true
-# extra info
-getDEAInfo(dde)$IFNg_vs_naive$alpha 
-```
-
 ## Overwrite results using `force = TRUE`
 
 <br>
