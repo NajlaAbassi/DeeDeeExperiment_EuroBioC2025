@@ -272,3 +272,13 @@ $selectionBackgroundColor: #B3C7E6 !default;
     font-size: 0.8em;
     color: var(--ummz-text-light);
 }
+
+.reveal .callout-warning {
+
+  // Or target specific elements within
+  * {
+    font-size: 1.2em;
+  }
+
+}
+
