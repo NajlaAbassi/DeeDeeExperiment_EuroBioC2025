@@ -70,7 +70,7 @@ format:
 * FEA: Functional Enrichment Analysis
 :::
 
-## Probelm amplified: Complex designs/Single-cell data ...
+## Problem amplified: Complex designs/Single-cell data ...
 
 :::::: {layout="[[1,1], [1]]" layout-heights="[2,1]"}
 
@@ -97,7 +97,7 @@ format:
 
 # Our solution
 
--   A new S4 object `DeeDeeExperiment` to structure and store DEA and FEA results in one place, based on the `SingleCellExpriment` object
+-   A new S4 object `DeeDeeExperiment` to structure and store DEA and FEA results in one place, based on the `SingleCellExperiment` object
 
 ![](img/DeeDeeExperiment_Anatomy.png){width=50% fig-align="center"}
 
@@ -445,39 +445,6 @@ To remove FEAs stored in a `dde` object, use `removeFEA()`
 :::
 ::::
 
-# Other features ...
-
-## Overwrite results using `force = TRUE`
-
-<br>
-<br>
-
-```{r addDEA_force, warning=FALSE}
-#| echo: true
-#| code-line-numbers: "1|5-7"
-#| output-location: fragment
-dde <- addDEA(dde, dea = list(same_contrast = de_limma))
-
-# overwrite results with the same name
-# e.g. if the content of the same object has changed
-dde <- addDEA(dde,
-              dea = list(same_contrast = de_limma),
-              force = TRUE)
-
-dde
-```
-
-
-## Return results in `original` format (default `format = "minimal"`)
-
-```{r get_dea_res_2}
-#| echo: true
-#| output: true
-#| code-line-numbers: "2-2"
-#| output-location: fragment
-# access the 1st DEA, in original format
-knitr::kable(head(getDEA(dde, format = "original")))
-```
 
 ## Single-cell in practice
 
